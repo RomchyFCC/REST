@@ -15,7 +15,7 @@
 
 
   // Get ID
-  $post->id = isset($_GET['id']) ? $_GET['id'] : die();
+  $post->id = isset($_GET['id']) ? $_GET['id'] : rand(1,63);
 
   // get post
   $post->read_single();
